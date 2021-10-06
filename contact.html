@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Business Inquiries</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <script src="bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <link href="bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link href="global.css" rel="stylesheet" />
+    </head>
+    <body>
+      <!-- Common Header -->
+      <header class="app-header">
+        <div class="container">
+          <div class="row">
+            <img src="Logo.svg" class="app-header-logo mb-4 col-12 col-md-3 align-self-center" />
+            <div class="app-header-navbar container mb-4 col-12 col-md-6 align-self-center">
+              <div class="row">
+                <!-- Should link to the landing page -->
+                <div class="col"><a class="btn hover">Home</a></div>
+                <!-- Should link to the order creation page -->
+                <div class="col"><a class="btn hover">Order</a></div>
+                <!-- Should link to the order history / tracking page -->
+                <div class="col"><a class="btn hover">Tracking</a></div>
+                <!-- Should link to the contact page -->
+                <div class="col"><a class="btn hover">Business</a></div>
+              </div>
+            </div>
+            <div class="col-3 mb-4 align-self-center d-none d-md-flex d-lg-flex d-xl-flex">
+              <div class="app-header-slogan">The fastest, freshest Pizza in town, straight to your door</div>
+            </div>
+          </div>
+        </div>
+      </header>
+        <!-- Landing Section -->
+        <section class="body py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+              <div class="jumbotron">
+                <div class="my-5 business-information">
+                  <h1>Business Information</h1>
+                  <div class="my-5 business-information-explanation">
+                    <h2>What is Paulie's Pizza?</h2>
+                    <!-- Explanation text here -->
+                    <!-- Should consist of the reason why the business exists as well as how it plans to make money-->
+                    <div class="business-information-explanation-content">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dignissimos saepe consectetur eos, harum molestias officia eaque explicabo, vero sapiente culpa. Ipsum accusantium in error libero dolores ex quia cupiditate!
+                    </div>
+                  </div>
+                  <div class="my-5 business-information-why">
+                    <h2>Why Paulie's?</h2>
+                    <!-- Pitch text here -->
+                    <!-- Should consist of the reasons why a business should partner with Paulie's Pizza, leading to a CTA of getting in touch-->
+                    <div class="business-information-why-content">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dignissimos saepe consectetur eos, harum molestias officia eaque explicabo, vero sapiente culpa. Ipsum accusantium in error libero dolores ex quia cupiditate!
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div class="my-5 business-information">
+                  <h1>Get in touch</h1>
+                  <p>
+                    If you and your team are interested in working with Paulie's, fill out the form below and one of our
+                    experts will reach out to you so we can get the ball rolling!
+                  </p>
+                  <form class="contact-form">
+                    <div class="contact-form-body">
+                      <div class="form-group my-2">
+                        <label for="inputHelp" class="mb-1">How can we help you?</label>
+                        <select class="form-control" id="inputHelp">
+                          <option>Please Select</option>
+                          <option>Request a demo</option>
+                          <option>Sign up as a new partner</option>
+                          <option>Questions about partnership</option>
+                          <option>Other</option>
+                        </select>
+                      </div>
+                      <div class="form-group my-2">
+                        <label for="inputFullName" class="mb-1">Full Name</label>
+                        <input type="text" class="form-control" id="inputFullName">
+                      </div>
+                      <div class="form-group my-2">
+                        <label for="inputBusinessName" class="mb-1">Business Name</label>
+                        <input type="text" class="form-control" id="inputBusinessName">
+                      </div>
+                      <div class="form-group my-2">
+                        <label for="inputBusinessName" class="mb-1">Email Address</label>
+                        <input type="email" class="form-control" id="inputBusinessName">
+                      </div>
+                      <div class="form-group my-2">
+                        <label for="inputBusinessName" class="mb-1">Phone Number</label>
+                        <input type="tel" class="form-control" id="inputBusinessName">
+                      </div>
+                      <div class="form-group my-2">
+                        <label for="inputBusinessName" class="mb-1">Full Address</label>
+                        <input type="text" class="form-control" id="inputBusinessName">
+                      </div>
+                      <!-- For the purposes of the project, this can probably remain as a regular submit button. In an actual app, this would trigger an API response. -->
+                      <button type="submit" class="btn btn-primary my-2 w-100">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+          </div>
+        </section>
+        <footer class="footer absolute-bottom">
+          <div class="container">
+            <p class="m-2 p-3 col text-center align-self-center">&copy; 2021 Paulie's Pizza All Rights Reserved</p>
+          </div>
+        </footer>
+    </body>
+</html>
