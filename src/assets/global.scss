@@ -1,0 +1,58 @@
+//compose your bootstrap-vue css build
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+:root {
+  --primary: #C40815;
+  --bs-primary: var(--primary) !important;
+  --primaryHover: #C92F3A;
+  --black: #222222;
+  --white: #FFFFFF;
+  --muted: #5E5E5E;
+  --neutral-0: #fefefe;
+  --neutral-1: #FBF7EE;
+  --neutral-2: #EED7C8;
+  --neutral-3: #DFD5CF;
+  --linkHover: #EFEFF2;
+}
+
+$primary: var(--primary) !default;
+$secondary: var(--muted) !default;
+
+h5 {
+  font-weight: bold;
+}
+
+.link-primary {
+  color: var(--primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primaryHover);
+  border-color: var(--primaryHover);
+}
+
+.btn-primary:active {
+  background-color: var(--primaryHover);
+  border-color: var(--primaryHover);
+}
+
+.btn-primary:focus {
+  color: #fff;
+  background-color: var(--primaryHover);
+  border-color: var(--primaryHover);
+  box-shadow: 0 0 0 0.25rem var(--primaryHover);
+}
+
+.hover:hover {
+  background-color: var(--linkHover) !important;
+  color: var(--primary);
+}
+
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~bootstrap-vue/src/index.scss";

@@ -2,16 +2,16 @@
   <header class="header">
     <div class="container">
       <div class="row">
-        <img src="../assets/Logo.svg" class="header-logo mb-4 col-12 col-md-3 align-self-center" />
-        <div class="header-navbar container mb-4 col-12 col-md-6 align-self-center">
+        <img src="../assets/Logo.svg" class="header-logo mb-1 mt-1 col-12 col-md-3 align-self-center" />
+        <div class="header-navbar container mb-1 mt-1 col-12 col-md-6 align-self-center">
           <div class="row">
             <!-- Render each of the routes -->
             <div class="col" v-for="{name, route} in routes" v-bind:key="route">
-              <a class="btn hover" v-bind:href="route">{{ name }}</a>
+              <router-link class="btn hover" :to="route">{{ name }}</router-link>
             </div>
           </div>
         </div>
-        <div class="col-3 mb-4 align-self-center d-none d-md-flex d-lg-flex d-xl-flex">
+        <div class="col-3 mb-1 mt-1 align-self-center d-none d-md-flex d-lg-flex d-xl-flex">
           <div class="header-slogan">The fastest, freshest Pizza in town, straight to your door</div>
         </div>
       </div>
@@ -25,7 +25,7 @@
     data() {
       return {
         routes: [
-          { name: 'Home', route: '/home' },
+          { name: 'Home', route: '/' },
           { name: 'Order', route: '/order' },
           { name: 'Tracking', route: '/tracking' },
           { name: 'Business', route: '/about' },
@@ -39,6 +39,7 @@
   .header {
     width: 100vw;
     padding-top: 10px;
+    padding-bottom: 10px;
     background-color: var(--white);
     box-shadow: 0 0 0 1px rgb(67 41 163 / 10%), 0 1px 8px 0 rgb(67 41 163 / 10%);
   }
