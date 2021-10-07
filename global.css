@@ -98,13 +98,3 @@ body {
   background-color: var(--linkHover) !important;
   color: var(--primary);
 }
-
-.contact-form {
-  border: solid 2px var(--white);
-  background-color: var(--white);
-  border-radius: 20px;
-}
-
-.contact-form-body {
-  padding: 20px;
-}

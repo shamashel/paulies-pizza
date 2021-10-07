@@ -10,7 +10,7 @@
         </div>
         <hr>
         <p>For business inquiries, contact us <a class="link-primary" href="contact.html">here</a></p>
-        <a class="btn btn-primary">Place an Order</a>
+        <router-link class="btn btn-primary" to="/order">Start an Order</router-link>
       </div>
     </div>
   </div>

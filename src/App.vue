@@ -4,14 +4,17 @@
     <section id="body">
       <router-view/>
     </section>
+    <Footer id="footer"/>
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header.vue';
+import Footer from '@/components/Footer.vue';
 export default {
   components: {
     Header,
+    Footer,
   }
 }
 </script>
@@ -34,5 +37,10 @@ export default {
 }
 #body {
   padding-bottom: 6rem !important;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 </style>

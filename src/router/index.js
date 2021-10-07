@@ -11,14 +11,24 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    component: () => import('../views/About.vue')
-  },
-  {
     path: '/order',
     name: 'Order',
     component: () => import('../views/Order.vue')
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: () => import('../views/Contact.vue')
+  },
+  {
+    path: '/cart',
+    name: 'Cart',
+    component: () => import('../views/Cart.vue')
+  },
+  {
+    path: '/tracking',
+    name: 'Tracking',
+    component: () => import('../views/Tracking.vue')
   },
 ]
 

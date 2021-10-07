@@ -19,8 +19,8 @@
 $primary: var(--primary) !default;
 $secondary: var(--muted) !default;
 
-h5 {
-  font-weight: bold;
+h1,h2,h3,h4,h5,h6 {
+  font-weight: bold !important;
 }
 
 .link-primary {
@@ -52,6 +52,10 @@ h5 {
 .hover:hover {
   background-color: var(--linkHover) !important;
   color: var(--primary);
+}
+
+.reduce-padding {
+  padding: 0;
 }
 
 @import "~bootstrap/scss/bootstrap.scss";
