@@ -9,7 +9,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dignissimos saepe consectetur eos, harum molestias officia eaque explicabo, vero sapiente culpa. Ipsum accusantium in error libero dolores ex quia cupiditate!
         </div>
         <hr>
-        <p>For business inquiries, contact us <a class="link-primary" href="contact.html">here</a></p>
+        <p>For business inquiries, contact us <router-link class="link-primary" to="/contact">here</router-link></p>
         <router-link class="btn btn-primary" to="/order">Start an Order</router-link>
       </div>
     </div>

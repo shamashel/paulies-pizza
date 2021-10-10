@@ -1,5 +1,8 @@
 <template>
-  <h1>This is a really cool order tracking page</h1>
+  <div class="tracking">
+    <h1>My Orders</h1>
+    <hr>
+  </div>
 </template>
 
 <script>

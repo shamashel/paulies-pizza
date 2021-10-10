@@ -29,21 +29,30 @@
             <div class="payment-info table-shadow">
                 <h6 class="mb-0 payment-header">Payment Information</h6>
                 <div>
-                  <label class="payment-label">Name on card</label>
-                  <input type="text" class="form-control credit-inputs" placeholder="Name" disabled>
+                  <label for="inputName" class="payment-label">Name on card</label>
+                  <input id="inputName" type="text" class="form-control credit-inputs" placeholder="Name" disabled>
                 </div>
                 <div>
-                  <label class="payment-label">Phone Number</label>
-                  <input type="text" class="form-control credit-inputs" placeholder="123-456-4790" disabled>
+                  <label for="inputPhoneNumber" class="payment-label">Phone Number</label>
+                  <input id="inputPhoneNumber" type="text" class="form-control credit-inputs" placeholder="123-456-4790" disabled>
                 </div>
                 <div>
-                  <label class="payment-label">Address</label>
-                  <input type="text" class="form-control credit-inputs" placeholder="Address" disabled>
+                  <label for="inputAddress" class="payment-label">Address</label>
+                  <input id="inputAddress" type="text" class="form-control credit-inputs" placeholder="Address" disabled>
                 </div>
-                <div><label class="payment-label">Card number</label><input type="text" class="form-control credit-inputs" placeholder="0000 0000 0000 0000" disabled></div>
+                <div>
+                  <label for="inputCredit" class="payment-label">Card number</label>
+                  <input id="inputCredit" type="text" class="form-control credit-inputs" placeholder="0000 0000 0000 0000" disabled>
+                </div>
                 <div class="row">
-                    <div class="col-md-6"><label class="payment-label">Date</label><input type="text" class="form-control credit-inputs" placeholder="1/01" disabled></div>
-                    <div class="col-md-6"><label class="payment-label">CVV</label><input type="text" class="form-control credit-inputs" placeholder="123" disabled></div>
+                    <div class="col-md-6">
+                      <label for="inputDate" class="payment-label">Date</label>
+                      <input id="inputDate" type="text" class="form-control credit-inputs" placeholder="1/01" disabled>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputCVV" class="payment-label">CVV</label>
+                      <input id="inputCVV" type="text" class="form-control credit-inputs" placeholder="123" disabled>
+                    </div>
                 </div>
                 <hr class="line">
                 <div class="d-flex justify-content-between information">
