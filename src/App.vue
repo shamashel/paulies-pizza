@@ -40,6 +40,7 @@ export default {
 }
 #footer {
   position: absolute;
+  height: 72px;
   bottom: 0;
   width: 100%;
 }

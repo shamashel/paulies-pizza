@@ -58,5 +58,10 @@ h1,h2,h3,h4,h5,h6 {
   padding: 0;
 }
 
+.clicky:hover {
+  cursor: pointer;
+}
+
 @import "~bootstrap/scss/bootstrap.scss";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
 @import "~bootstrap-vue/src/index.scss";

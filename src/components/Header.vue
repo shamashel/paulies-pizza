@@ -44,7 +44,7 @@
 
 <style lang="scss" scoped>
   .header {
-    width: 100vw;
+    width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: var(--white);

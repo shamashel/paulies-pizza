@@ -78,23 +78,3 @@ body {
   text-align: center;
   color: var(--muted);
 }  
-
-.reduce-padding {
-  padding: 0;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-.app-header-navbar > .row {
-  --bs-gutter-x: 0 !important;
-  flex-wrap: unset !important;
-}
-
-.hover:hover {
-  background-color: var(--linkHover) !important;
-  color: var(--primary);
-}

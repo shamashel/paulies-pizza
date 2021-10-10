@@ -42,7 +42,7 @@
     },
     methods: {
       addToCart(id) {
-        this.$emit('addToCart', id);
+        this.$emit('addToCart', { id });
       }
     },
     computed: {
