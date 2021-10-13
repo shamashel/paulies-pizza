@@ -1,39 +1,39 @@
 const products = [
   {
-    title: 'Pepperoni Pizza',
+    title: `Pepperoni Pizza`,
     stars: 5,
     price: 14.99,
-    src: '/images/pepperoni_pizza.jpg',
+    src: `${process.env.BASE_URL}images/pepperoni_pizza.jpg`,
   },
   {
-    title: '3 Topping Pizza',
+    title: `3 Topping Pizza`,
     stars: 5,
     price: 19.99,
-    src: '/images/3_topping_pizza.jpg',
+    src: `${process.env.BASE_URL}images/3_topping_pizza.jpg`,
   },
   {
-    title: 'Mozzarella Sticks',
+    title: `Mozzarella Sticks`,
     stars: 5,
     price: 4.99,
-    src: '/images/mozzarella_sticks.jpg',
+    src: `${process.env.BASE_URL}images/mozzarella_sticks.jpg`,
   },
   {
-    title: 'Garlic Knots',
+    title: `Garlic Knots`,
     stars: 5,
     price: 1.99,
-    src: '/images/garlic_knots.jpg',
+    src: `${process.env.BASE_URL}images/garlic_knots.jpg`,
   },
   {
-    title: 'Garlic Bread',
+    title: `Garlic Bread`,
     stars: 5,
     price: 2.99,
-    src: '/images/garlic_bread.jpg',
+    src: `${process.env.BASE_URL}images/garlic_bread.jpg`,
   },
   {
-    title: 'Pasta Entree',
+    title: `Pasta Entree`,
     stars: 5,
     price: 21.99,
-    src: '/images/pasta_entree.jpg',
+    src: `${process.env.BASE_URL}images/pasta_entree.jpg`,
   },
 ];
 
@@ -43,7 +43,7 @@ export function getAllProducts() {
 }
 
 export function getProductById(id) {
-  if (typeof id === 'string') {
+  if (typeof id === `string`) {
     id = parseInt(id);
   }
   // Clone the product instead of directly returning it for safety

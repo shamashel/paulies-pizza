@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
       <div class="d-flex flex-row">
-        <img class="rounded" v-bind:src="product.src" width="75">
+        <img class="rounded" v-bind:src="`${product.src}`" width="75">
         <div class="ml-2 align-self-center">
           <div class="font-weight-bold d-block">{{ product.title }}</div>
         </div>
@@ -25,6 +25,11 @@
         type: Object,
         required: true,
       },
+    },
+    data() {
+      return {
+        publicPath: process.env.BASE_URL
+      }
     },
     methods: {
       removeFromCart(id) {
