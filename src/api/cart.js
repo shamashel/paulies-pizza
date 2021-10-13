@@ -54,8 +54,13 @@ export function removeFromCart(id) {
   }
 }
 
+export function emptyCart() {
+  return setCart({});
+}
+
 export default {
   getCart,
   addToCart,
   removeFromCart,
+  emptyCart,
 }

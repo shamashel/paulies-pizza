@@ -71,7 +71,11 @@
                   <span>Total</span>
                   <span>${{ (subtotal + shipping + tax).toFixed(2) }}</span>
                 </div>
-                <button class="btn btn-primary btn-block d-flex justify-content-center mt-3" type="button">
+                <button
+                  class="btn btn-primary btn-block d-flex justify-content-center mt-3"
+                  type="button"
+                  v-on:click="placeOrder(cart)"
+                >
                   <span>Checkout<i class="bi bi-arrow-right ml-1"></i></span>
                 </button>
             </div>
@@ -97,6 +101,7 @@
   import CartItem from '../components/CartItem'; 
   import cart from '../api/cart';
   import products from '../api/products';
+  import orders from '../api/orders';
   import EmptyCart from '../assets/empty_cart.jpg';
   export default {
     name: 'Cart',
@@ -135,6 +140,16 @@
           return prev;
         }, 0);
       },
+      placeOrder(cartCopy) {
+        const order = {
+          date: new Date(),
+          total: (this.subtotal + this.shipping + this.tax),
+          cart: cartCopy
+        };
+        orders.addOrder(order);
+        cart.emptyCart();
+        this.$router.push({ path: 'tracking' });
+      }
     }
   }
 </script>

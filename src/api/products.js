@@ -1,39 +1,39 @@
 const products = [
   {
-    title: 'Large Pizza',
+    title: 'Pepperoni Pizza',
     stars: 5,
     price: 14.99,
-    src: 'https://via.placeholder.com/450x300',
+    src: '/images/pepperoni_pizza.jpg',
   },
   {
-    title: 'Large Pizza (3 Toppings)',
+    title: '3 Topping Pizza',
     stars: 5,
     price: 19.99,
-    src: 'https://via.placeholder.com/450x300',
+    src: '/images/3_topping_pizza.jpg',
   },
   {
     title: 'Mozzarella Sticks',
     stars: 5,
     price: 4.99,
-    src: 'https://via.placeholder.com/450x300',
+    src: '/images/mozzarella_sticks.jpg',
   },
   {
     title: 'Garlic Knots',
     stars: 5,
     price: 1.99,
-    src: 'https://via.placeholder.com/450x300',
+    src: '/images/garlic_knots.jpg',
   },
   {
     title: 'Garlic Bread',
     stars: 5,
     price: 2.99,
-    src: 'https://via.placeholder.com/450x300',
+    src: '/images/garlic_bread.jpg',
   },
   {
     title: 'Pasta Entree',
     stars: 5,
     price: 21.99,
-    src: 'https://via.placeholder.com/450x300',
+    src: '/images/pasta_entree.jpg',
   },
 ];
 
