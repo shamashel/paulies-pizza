@@ -2,7 +2,7 @@
   <div class="product">
     <div class="col mb-5">
         <div class="card h-100">
-            <img class="card-img-top" v-bind:src="product.src" alt="placeholder image" />
+            <img class="card-img-top" v-bind:src="product.src" v-bind:alt="`Image of ${product.title}`" v-bind:title="`Image of ${product.title}`"  />
             <div class="card-body p-4">
                 <div class="text-center">
                     <h5>{{ product.title }}</h5>

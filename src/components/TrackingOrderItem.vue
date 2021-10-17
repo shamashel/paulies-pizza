@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex justify-content-between align-items-center my-1 p-2 items rounded">
       <div class="d-flex flex-row">
-        <img class="rounded" v-bind:src="`${product.src}`" width="75">
+        <img class="rounded" v-bind:src="`${product.src}`" v-bind:alt="`Image of ${product.title}`" v-bind:title="`Image of ${product.title}`" width="75">
         <div class="ml-2 align-self-center">
           <div class="font-weight-bold d-block">{{ product.title }}</div>
         </div>

@@ -5,14 +5,14 @@
         <router-link
           to="/" tag="img" :src="Logo" 
           class="header-logo mb-3 mb-lg-1 mt-1 col-12 col-lg-3 align-self-center"
-          alt="Company Logo"
+          alt="Company Logo (Click to go home)"
           title="Home"
         />
         <div class="header-navbar container mb-1 mt-1 col-12 col-lg-6 align-self-center">
           <div class="row">
             <!-- Render each of the routes -->
             <div class="col" v-for="{name, route} in routes" v-bind:key="route">
-              <router-link class="btn hover" :to="route">{{ name }}</router-link>
+              <router-link class="btn hover" v-bind:to="route">{{ name }}</router-link>
             </div>
           </div>
         </div>
@@ -25,7 +25,7 @@
 </template>
 
 <script>
-  import Logo from '@/assets/Logo.svg';
+  import Logo from '../assets/Logo.svg';
   export default {
     name: 'Header',
     data() {
