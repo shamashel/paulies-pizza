@@ -26,3 +26,7 @@ Direct Image Link: https://i1.wp.com/dashofsavory.com/wp-content/uploads/2018/10
 ## Garlic Bread
 Photo by Daria Shevtsova from Pexels
 https://www.pexels.com/photo/person-putting-herbs-on-a-sliced-bread-4117707/
+
+## Pasta Entree
+Photo by Lgh_9 from Pexels
+https://www.pexels.com/photo/pasta-with-parmesan-1256875/
